@@ -11,7 +11,9 @@ $(function(){
             slideChange: function () {
                 var swipeIdx = swiper.realIndex + 1;
 
-                if (swipeIdx == 4 || swipeIdx == 5 || swipeIdx == 7) {
+                console.log(swipeIdx)
+
+                if (swipeIdx == 2 || swipeIdx == 6 || swipeIdx == 7 || swipeIdx == 9) {
                     $('.work .main-tit').css('text-shadow','0px 0px 20px rgba(0, 0, 0, 0.8)');
                 } else {
                     $('.work .main-tit').css('text-shadow','0px 0px 20px rgba(255, 255, 255, 0.8)');
@@ -43,7 +45,7 @@ $(function(){
         $('body').addClass('modal-active');
         $("body").css("top", -posY);
 
-        console.log(posY)
+        // console.log(posY)
         
         $('#modal-container .modal-bg .modal').each(function (index, item) {
             if($(this).attr('id') == buttonId) {
